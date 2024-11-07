@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1{
+        @apply text-[#292929] dark:text-white text-[35px] lg:text-[56px] font-bold leading-[1.4] tracking-[0.2px];
+    }
+    h2{
+        @apply text-[#292929] dark:text-white text-[25px] lg:text-[40px] font-bold leading-[1.4] tracking-[0.2px];
+    }
+    h3{
+        @apply text-[#292929] dark:text-white text-[20px] lg:text-[25px] font-bold leading-[1.4] tracking-[0.2px];
+    }
+    h4{
+        @apply text-[#292929] dark:text-white text-[16px] lg:text-[20px] font-bold leading-[1.4] tracking-[0.2px];
+    }
+    p{
+        @apply text-[#6A6A6A] dark:text-white text-[14px] lg:text-[16px] font-normal leading-[24px];
+    }
+    a{
+        @apply text-[#6A6A6A] dark:text-white text-[16px] font-normal leading-[36px] tracking-[0.2px];
+    }
+    li{
+        @apply text-[#6A6A6A] dark:text-white text-[16px]  font-semibold;
+    }
+    button{
+        @apply text-white text-[16px] bg-[#425CEC] font-bold;
+    }
+    section{
+        @apply pt-[50px] lg:pt-[130px]
+    }
+}
+@layer components{
+    .container1{
+        max-width: 1202px;
+        margin: 0 auto;
+        padding: 0 16px 0 16px;
+    }
+    
+    .item-show{
+        visibility: hidden;
+        opacity: 0;
+       
+        
+    }
+    .item:hover .item-show{
+        visibility: visible;
+        opacity: 1;
+    }
+ 
+}
